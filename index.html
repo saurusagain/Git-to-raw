@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <title>Git to Raw · GitHub Link to Raw Link Converter</title>
+  <meta name="description" content="Your shortcut to Generate Raw GitHub Links" />
+  <meta http-equiv="imagetoolbar" content="no" />
+
+  <!-- https://search.google.com/search-console/about VERIFICATION -->
+  <meta name="google-site-verification" content="NcXe_fwBOSWUA2PsHR3at5FBIBAAYVUYCbswnGGYQX0" />
+
+  <!-- SITEMAP NEEDS! 
+  https://sosteve.medium.com/your-next-js-website-isnt-on-google-time-to-fix-it-c8f92f515e35
+  -->
+
+
+  <!--==================== OPEN GRAPH META TAGS (FOR SOCIAL MEDIA PREVIEW) ===================== -->
+  <!-- Facebook -->
+  <meta property="og:title" content="Git to Raw">
+  <meta property="og:description" content="Your shortcut to Generate Raw GitHub Links">
+  <meta property="og:image" content="https://i.imgur.com/ceRkZe6.png">
+  <meta property="og:url" content="https://saurusagain.github.io/git-to-raw/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Git to Raw">
+  <meta name="twitter:description" content="Your shortcut to Generate Raw GitHub Links">
+  <meta name="twitter:image" content="https://i.imgur.com/ceRkZe6.png">
+  <meta name="twitter:url" content="https://saurusagain.github.io/git-to-raw/">
+
+  <!-- Discord -->
+  <meta property="twitter:site" content="@saurusagain">
+  <meta property="twitter:creator" content="@saurusagain">
+  <meta property="twitter:title" content="Git to Raw">
+  <meta property="twitter:description" content="Your shortcut to Generate Raw GitHub Links">
+  <meta property="twitter:image" content="https://i.imgur.com/ceRkZe6.png">
+
+  <!-- Google -->
+  <meta itemprop="name" content="Git to Raw">
+  <meta itemprop="description" content="Your shortcut to Generate Raw GitHub Links">
+  <meta itemprop="image" content="https://i.imgur.com/ceRkZe6.png">
+
+  <!-- Pinterest -->
+  <!-- Add Pinterest specific meta tags if needed -->
+
+  <!-- Other Website -->
+  <!-- Add specific meta tags for other websites if needed -->
+
+  <!-- STRUCTURED DATA -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Git to Raw",
+      "description": "Your shortcut to Generate Raw GitHub Links",
+      "url": "https://saurusagain.github.io/git-to-raw/",
+      "image": "https://i.imgur.com/ceRkZe6.png"
+    }
+  </script>
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- ====================PWA================== -->
+  <link rel="manifest" href="manifest.json" />
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/32.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/72.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/100.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/128.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/144.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/152.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/192.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/256.png" />
+  <link rel="apple-touch-icon" href="assets/img/PwaImages/ios/512.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#5779E0" />
+  <!-- For Firefox and Firefox for Android -->
+  <meta name="msapplication-navbutton-color" content="#5779E0">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#5779E0">
+  <!-- For Chrome, Opera, and Safari -->
+  <meta name="theme-color" content="#5779E0">
+
+  <!-- ============FAVICONS============== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets//img/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicons/favicon.ico" />
+
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <!--==================== ANIMATE CSS ====================-->
+  <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css?v=2.0" />
+
+  <!--==================== MATERIAL ICONS ====================-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--==================== ENHANCED MODERN STYLES ====================-->
+  <link rel="stylesheet" href="assets/css/enhanced.css?v=2.0" />
+</head>
+
+
+<body class="dark-theme">
+
+  <!-- ===================== CIRCLE BG ANIMATION LOOP ==================== -->
+  <div class="circle_bubble__anim">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo noSelect">Git to Raw</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+
+          <li class="nav__item">
+            <a href="#convert" class="nav__link noSelect active-link">
+              <i class="fa-solid fa-bolt nav__icon"></i> Convert
+            </a>
+          </li>
+
+
+          <li class="nav__item">
+            <a href="#help" class="nav__link noSelect">
+              <i class="fa-solid fa-circle-question nav__icon"></i> Help
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#tutorial" class="nav__link noSelect">
+              <i class="fa-solid fa-play nav__icon"></i> Tutorial
+            </a>
+          </li>
+
+          <!--
+          <li class="nav__item">
+            <a href="#about" class="nav__link noSelect">
+              <i class="fa-solid fa-user nav__icon"></i> About
+            </a>
+          </li>
+          -->
+
+        </ul>
+        <i class="fa-solid fa-xmark nav__close noSelect" id="nav-close"></i>
+      </div>
+
+
+      <div class="nav__btns">
+        <!-- theme change button -->
+        <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
+
+        <!-- navigation button -->
+        <div class="nav__toggle noSelect" id="nav-toggle">
+          <i class="uil uil-sort-amount-up nav-drawer"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+
+  <main class="main">
+
+    <!--==================== CONVERT ====================-->
+
+    <section class="convert section" id="convert">
+      <h2 class="section__title convert__title">
+        <convertTitleStyle>Git to Raw</convertTitleStyle>
+      </h2>
+      <span class="section__subtitle convert__subtitle">.</span>
+
+
+      <div class="convert__container container grid">
+
+
+        <div class="convert__form grid">
+
+          <!-- INPUT/PASTE DATA HEADER -->
+          <h3 class="contact-availability__title">GitHub Link  <span><i class="fa-solid fa-circle-info contact-availability__title_icon popup__button__clicker"></i></span>  </h3>
+
+          <!-- GITHUB LINK INFO // contact-availability__title_icon popup__button__clicker ! -->
+          <div class="popup__modal">
+            <div class="popup__modal-content">
+              <h4 class="popup__modal-title">GitHub Link Example</h4>
+              <i class="fa-solid fa-xmark popup__modal-close"></i>
+              <ul class="popup__modal-services grid">
+
+                <li class="popup__modal-service">
+                  <i class="fa-solid fa-angle-right popup__modal-icon"></i>
+                  <p>
+                    GitHub Link that can convert using Git to Raw should be look like this: <b class="popup__link_format"><br><br>https://github.com/user/project_name/blob/main/output-media/screenshot.png<br></b>
+                  </p>
+                </li>            
+
+              </ul>
+            </div>
+          </div> 
+
+          <!-- INPUT/PASTE DATA CONTENT -->
+          <div class="convert__content">
+            <input type="text" id="githubLink" class="convert__input inputted__text"
+              placeholder="paste github link here" required autocomplete="off">
+            <button type="" class="convert__btn" onclick="convertToRawLink()"><i
+                class="fa-solid fa-arrow-right button__icon_center"></i>
+            </button>
+          </div>     
+          
+
+          <!-- OUTPUT/COPY DATA HEADER -->
+          <h3 class="contact-availability__title">Raw Link  <span><i class="fa-solid fa-circle-info contact-availability__title_icon popup__button__clicker"></i></span>  </h3>
+
+          <!-- RAW LINK INFO // contact-availability__title_icon popup__button__clicker ! -->
+          <div class="popup__modal">
+            <div class="popup__modal-content">
+              <h4 class="popup__modal-title">Raw Link Sample Output</h4>
+              <i class="fa-solid fa-xmark popup__modal-close"></i>
+              <ul class="popup__modal-services grid">
+
+                <li class="popup__modal-service">
+                  <i class="fa-solid fa-angle-right popup__modal-icon"></i>
+                  <p>
+                    Raw Link output should be look like this: <b class="popup__link_format"><br><br>https://raw.githubusercontent.com/user/project_name/main/output-media/screenshot.png<br></b>
+                  </p>
+                </li>            
+
+              </ul>
+            </div>
+          </div> 
+
+          <!-- OUTPUT/COPY DATA CONTENT -->
+          <div class="convert__content">
+            <input type="text" id="rawLink" class="convert__input converted__text" placeholder="result" readonly>
+            <button type="" class="convert__btn convert__copy_btn" onclick="copyRawLink()"><i
+                class="fa-solid fa-copy button__icon_center"></i>
+            </button>
+          </div>
+
+          <!--==================== NEED HELP ====================-->
+          <div class="home__scroll">
+            <a href="#help" class="home__scroll-button button--flex">
+              <i class="fa-solid fa-arrow-down home__scroll-mouse"></i>
+              <span class="home__scroll-name">Need Help</span>
+              <i class="fa-solid fa-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+  </main>
+
+
+  <!--==================== HELP ====================-->
+
+  <section class="help section reveal fade-bottom" id="help">
+    <h2 class="section__title">Introduction</h2>
+    <span class="section__subtitle">Read more about Git to Raw</span>
+
+    <div class="about__container container grid">
+      <img src="assets/img/github1.png" alt="" class="about__img" />
+
+      <div class="about__data">
+        <p class="about__description">
+          To serve content from GitHub on other websites, you need to convert the GitHub link to a raw link.
+          <br><br>
+          <colorTextHighlight>Git to Raw</colorTextHighlight> is a tool that simplifies the process by assisting you in
+          converting the GitHub normal
+          link to a GitHub raw link.
+          <br><br>Simply <colorTextHighlight>paste</colorTextHighlight> the GitHub link in the first textbox,
+          click the convert button, and then <colorTextHighlight>copy</colorTextHighlight> your GitHub raw link from the
+          second textbox.
+          <br><br>Dibuat dengan <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#EF4444" style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin: 0 2px;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> dari <b>Indonesia</b> <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" style="width: 20px; height: 14px; display: inline-block; vertical-align: middle; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.3); margin: 0 4px;"><rect width="3" height="1" fill="#E70011"/><rect y="1" width="3" height="1" fill="#FFFFFF"/></svg> oleh <a href="https://github.com/saurusagain" target="_blank" rel="noopener noreferrer"><colorTextHighlight>Saurus</colorTextHighlight></a> sebagai proyek Open Source.
+        </p>
+
+
+        <!-- 2 BUTTONS BELOW -->
+
+        <div class="about__btns__container">
+
+          <!-- TRY IT NOW BUTTON -->
+          <div class="about__buttons">
+            <a href="#tutorial" class="button button--flex">
+              Tutorial Below<i class="fa-solid fa-angles-down button__icon"></i></a>
+          </div>
+
+          <!-- SOURCE CODE BUTTON -->
+          <div class="about__buttons">
+            <a class="button button--flex popup__button__clicker">
+              About Project<i class="fa-solid fa-user-exclamation button__icon"></i></a>
+          </div>
+
+          <!-- ABOUT PROJECT MODAL! -->
+          <div class="popup__modal">
+            <div class="popup__modal-content">
+              <h4 class="popup__modal-title">About Project</h4>
+              <i class="fa-solid fa-xmark popup__modal-close"></i>
+              <ul class="popup__modal-services grid">
+
+                <li class="popup__modal-service">
+                  <i class="fa-solid fa-bolt popup__modal-icon" style="color: #3B82F6;"></i>
+                  <p>
+                    <b>Git to Raw</b> — Instant GitHub link to Raw content URL converter.
+                  </p>
+                </li>
+
+                <li class="popup__modal-service">
+                  <i class="fa-solid fa-user-astronaut popup__modal-icon" style="color: #10B981;"></i>
+                  <p>
+                    Developed by <b>Saurus</b> from Indonesia <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" style="width: 20px; height: 14px; display: inline-block; vertical-align: middle; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.3); margin: 0 4px;"><rect width="3" height="1" fill="#E70011"/><rect y="1" width="3" height="1" fill="#FFFFFF"/></svg>.
+                    Check developer profile on <a href="https://github.com/saurusagain" target="_blank" rel="noopener noreferrer">
+                      <colorTextHighlight>GitHub</colorTextHighlight></a>
+                  </p>
+                </li>
+
+                <li class="popup__modal-service">
+                  <i class="fa-brands fa-github popup__modal-icon" style="color: #60A5FA;"></i>
+                  <p>
+                    Open Source Repository: <a href="https://github.com/saurusagain/Git-to-raw" target="_blank" rel="noopener noreferrer">
+                      <colorTextHighlight>saurusagain/Git-to-raw</colorTextHighlight></a>
+                  </p>
+                </li>
+
+                <li class="popup__modal-service">
+                  <i class="fa-solid fa-shield-halved popup__modal-icon" style="color: #F59E0B;"></i>
+                  <p>
+                    Fast, secure, client-side conversion with zero tracking and full privacy.
+                  </p>
+                </li>                
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--==================== TUTORIAL ====================-->
+
+  <section class="tutorial section reveal fade-bottom" id="tutorial">
+    <h2 class="section__title">Video Tutorial</h2>
+    <span class="section__subtitle">Watch the Video Tutorial by Me</span>
+
+    <div class="video__container">
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9mlEIw5V7vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+    
+    <div class="video__btns__container">
+
+      <!-- TRY NOW -->
+      <div class="video__down_buttons">
+        <a href="#convert" class="button button--flex">
+          Try it Now!<i class="fa-solid fa-angles-up button__icon"></i></a>
+      </div>
+
+      <!-- SOURCE CODE -->
+      <div class="video__down_buttons">
+        <a href="https://youtube.com/@EMTechon?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="button button--flex">
+          Subscribe<i class="fa-brands fa-youtube button__icon"></i></a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!--==================== FOOTER ====================-->
+
+  <footer class="footer">
+
+    <div class="footer__bg">
+      <div class="footer__container container">
+
+        <div class="footer__logo_container" style="text-align: center; margin-bottom: 1.5rem;">
+          <div style="font-size: 2.2rem; font-weight: 800; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; gap: 8px;"><svg class="bolt-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width: 28px; height: 28px; display: inline-block; vertical-align: middle; color: #3B82F6;"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Git to <span style="color: #60A5FA;">Raw</span></div>
+          <p style="color: #94A3B8; font-size: 0.95rem; margin-top: 0.5rem;">The reliable GitHub Link to Raw Link Converter</p>
+        </div>
+
+        <!------- GITHUB ONLY ------->
+        <div class="footer__github_section" style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem;">
+          <a href="https://github.com/saurusagain/git-to-raw" target="_blank" rel="noopener noreferrer" class="footer__github_pill">
+            <i class="fa-brands fa-github" style="font-size: 1.4rem;"></i>
+            <span>GitHub Repository</span>
+          </a>
+          <a href="https://github.com/saurusagain" target="_blank" rel="noopener noreferrer" class="footer__github_pill">
+            <i class="fa-solid fa-code-fork" style="font-size: 1.2rem;"></i>
+            <span>Developer @saurusagain</span>
+          </a>
+        </div>
+
+      </div>
+
+      <p class="footer__copy" style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; color: #94A3B8;">Copyright © <span current-year></span> <b>Git to Raw</b> • Developed by <b>Saurus</b> from Indonesia <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" style="width: 20px; height: 14px; display: inline-block; vertical-align: middle; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.3); margin: 0 4px;"><rect width="3" height="1" fill="#E70011"/><rect y="1" width="3" height="1" fill="#FFFFFF"/></svg> • All rights reserved.</p>
+    </div>
+
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#convert" class="scrollup" id="scroll-up" title="Scroll to Top">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <!--==================== SCROLL DOWN ====================-->
+  <a href="#help" class="scrolldown" id="scroll-down" title="Scroll to down">
+    <i class="fa-solid fa-arrow-down scrolldown__icon"></i>
+  </a>
+
+  <!--==================== SWIPER JS ====================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--==================== SMTP (For Senting Emails) ====================-->
+  <script src="assets/js/smtp.js"></script>
+
+  <!--==================== reCAPTCHA ====================-->
+  <!--
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdUccImAAAAALa1N3ue9L4t8SVRdA3adp2aziIF"></script>
+  -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdUccImAAAAALa1N3ue9L4t8SVRdA3adp2aziIF"></script>
+
+  <!--==================== SVG INJECT ====================-->
+  <!--
+  <script src="assets/js/svg-inject.min.js"></script>  
+  -->
+
+  <!--==================== DISABLE WEB TOOLS ====================-->
+  <!-- https://github.com/theajack/disable-devtool/tree/master 
+  <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>    -->
+
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js?v=2.0"></script>
+
+
+
+  <!--==================== LINKS (GITHUB ONLY) ====================-->
+  <script>
+    var github_Var = document.getElementsByClassName('github_Link');
+    Array.from(github_Var).forEach(function (linkElement) {
+      linkElement.href = 'https://github.com/saurusagain';
+    });
+  </script>
+
+
+
+  <!-- ===================== SHOW/HIDE LOADER ==================== -->
+  <script>
+    function hideLoader() {
+    var loadingElement = document.getElementById("loading");
+    if (loadingElement) {
+      loadingElement.style.opacity = '0';
+      loadingElement.style.transition = 'opacity 0.4s ease';
+      setTimeout(() => { loadingElement.style.display = "none"; }, 400);
+    }
+  }
+  window.addEventListener('load', hideLoader);
+  setTimeout(hideLoader, 1200);
+  </script>
+
+  <!-- =====================REGISTER SERVICE WORKER================ -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker
+          .register("/serviceWorker.js")
+          .then((res) => console.log("service worker registered successfully"))
+          .catch((err) => console.log("service worker not registered", err));
+      });
+    }
+  </script>
+</body>
+
+</html>

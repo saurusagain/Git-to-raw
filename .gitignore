@@ -1,0 +1,19 @@
+﻿# Git to Raw ignores
+node_modules/
+.env
+*.log
+init_push.bat
+*.bat
+update_*.js
+do_capture.js
+test_capture.js
+clean_*.js
+sanitize_*.js
+recreate_repo.js
+convert_icons.py
+output/*.png
+output/*.gif
+output/*.mp4
+*.ps1
+*.sh
+*.tmp
